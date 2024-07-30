@@ -1,0 +1,246 @@
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(41, 40, 38);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    position: relative;
+    left: -20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.featured-auctions {
+    padding: 20px 0;
+}
+
+.featured-auctions .auction-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.featured-auctions .auction-item {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.categories {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.categories .category-item {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin: 1.5%;
+}
+
+.category-item a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #28a745;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.category-item a:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    color: #fff;
+    cursor: pointer;
+}
+
+.category-item a:active {
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #007BFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #004080;
+    border-color: #004080;
+}
+
+.btn:disabled {
+    background-color: #c0c0c0;
+    border-color: #a0a0a0;
+    color: #666;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    /* Match padding with nav links */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    line-height: 24px;
+    /* Ensure text aligns vertically */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    align-items: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    /* Position dropdown below the button */
+    left: -60px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 30px;
+    /* Adjust padding for better alignment */
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    /* Match font size with nav links */
+    line-height: 24px;
+    /* Ensure text aligns vertically */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .featured-auctions {
+        display: flex;
+        margin-left: 65px;
+    }
+}
